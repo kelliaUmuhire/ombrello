@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Karla:wght@200;300;400;500;600;700&family=Old+Standard+TT:wght@700&display=swap");
+
+.font-comforter {
+  font-family: "Comforter Brush", cursive;
+}
+
+.font-old {
+  font-family: "Old Standard TT", serif;
+}
+
+.font-karla {
+  font-family: "Karla", sans-serif;
+}
+
+body {
+  background-color: #070620;
+}
+
+/* Rain */
+
+#rainContainer {
+  top: 14%;
+}
+
+.raindrop {
+  position: absolute;
+  top: -50px;
+  width: 2px;
+  height: 30px;
+  background-color: #d3d3d3;
+  animation: rain 0.4s linear infinite;
+  opacity: 0.2;
+  /* z-index: 2; */
+}
+
+@keyframes rain {
+  from {
+    left: Math.random() * window.innerWidth;
+  }
+  to {
+    left: Math.random() * window.innerHeight;
+    top: 80%;
+  }
+}
+
+.ReactModal__Content {
+  width: 60%;
+}
+
+@media only screen and (max-width: 768px) {
+  .ReactModal__Content {
+    width: 95%;
+  }
+}
